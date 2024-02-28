@@ -176,9 +176,10 @@ class ReverbFDN
                 delay_time[i] = (ReverbParams[i][0] + delay_variations[i] * diffusion_);
             }
 
-            output += delay[i].Read();
+            output += delay[i].Read(); // DURCH DENSITY TEILEN; DAMIT ES NICHT LAUTER WIRD
 
-            delay[i].Write(input + delay[i].Read() * feedback_);
+            delay[i].Write(input + delay[i].Read() * feedback_); // AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          // DER DELAY OUTPUT MUSS IN ALLE ALS INPUT NICHT NUR IN I
 
             delay[i].SetDelay(slewLimiter.process(delay_time[i]) * sample_rate_ * size_);
         }
