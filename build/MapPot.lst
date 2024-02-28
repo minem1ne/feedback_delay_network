@@ -1,0 +1,610 @@
+ARM GAS  C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"MapPot.cpp"
+  13              		.text
+  14              	.Ltext0:
+  15              		.cfi_sections	.debug_frame
+  16              		.section	.text._ZSt3powff,"axG",%progbits,_ZSt3powff,comdat
+  17              		.align	1
+  18              		.weak	_ZSt3powff
+  19              		.arch armv7e-m
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  23              		.fpu fpv5-d16
+  25              	_ZSt3powff:
+  26              	.LFB190:
+  27              		.file 1 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\cmath"
+   1:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // -*- C++ -*- C forwarding header.
+   2:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+   3:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // Copyright (C) 1997-2020 Free Software Foundation, Inc.
+   4:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** //
+   5:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // This file is part of the GNU ISO C++ Library.  This library is free
+   6:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // software; you can redistribute it and/or modify it under the
+   7:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // terms of the GNU General Public License as published by the
+   8:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // Free Software Foundation; either version 3, or (at your option)
+   9:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // any later version.
+  10:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  11:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // This library is distributed in the hope that it will be useful,
+  12:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // but WITHOUT ANY WARRANTY; without even the implied warranty of
+  13:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  14:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // GNU General Public License for more details.
+  15:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  16:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // Under Section 7 of GPL version 3, you are granted additional
+  17:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // permissions described in the GCC Runtime Library Exception, version
+  18:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // 3.1, as published by the Free Software Foundation.
+  19:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  20:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // You should have received a copy of the GNU General Public License and
+  21:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // a copy of the GCC Runtime Library Exception along with this program;
+  22:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+  23:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // <http://www.gnu.org/licenses/>.
+  24:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  25:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** /** @file include/cmath
+  26:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  This is a Standard C++ Library file.  You should @c \#include this file
+  27:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  in your programs, rather than any of the @a *.h implementation files.
+  28:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *
+  29:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  This is the C++ version of the Standard C Library header @c math.h,
+  30:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  and its contents are (mostly) the same as that header, but are all
+  31:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  contained in the namespace @c std (except for names which are defined
+ARM GAS  C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s 			page 2
+
+
+  32:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  *  as macros in C).
+  33:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****  */
+  34:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  35:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** //
+  36:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // ISO C++ 14882: 26.5  C library
+  37:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** //
+  38:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  39:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #pragma GCC system_header
+  40:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  41:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <bits/c++config.h>
+  42:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <bits/cpp_type_traits.h>
+  43:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <ext/type_traits.h>
+  44:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #define _GLIBCXX_INCLUDE_NEXT_C_HEADERS
+  45:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include_next <math.h>
+  46:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef _GLIBCXX_INCLUDE_NEXT_C_HEADERS
+  47:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #include <bits/std_abs.h>
+  48:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  49:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef _GLIBCXX_CMATH
+  50:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #define _GLIBCXX_CMATH 1
+  51:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  52:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** // Get rid of those macros defined in <math.h> in lieu of real functions.
+  53:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef div
+  54:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef acos
+  55:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef asin
+  56:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef atan
+  57:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef atan2
+  58:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef ceil
+  59:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef cos
+  60:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef cosh
+  61:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef exp
+  62:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef fabs
+  63:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef floor
+  64:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef fmod
+  65:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef frexp
+  66:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef ldexp
+  67:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef log
+  68:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef log10
+  69:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef modf
+  70:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef pow
+  71:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef sin
+  72:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef sinh
+  73:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef sqrt
+  74:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef tan
+  75:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #undef tanh
+  76:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  77:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** extern "C++"
+  78:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** {
+  79:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** namespace std _GLIBCXX_VISIBILITY(default)
+  80:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** {
+  81:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  82:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  83:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::acos;
+  84:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  85:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+  86:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+  87:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   acos(float __x)
+  88:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_acosf(__x); }
+ARM GAS  C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s 			page 3
+
+
+  89:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  90:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+  91:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   acos(long double __x)
+  92:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_acosl(__x); }
+  93:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+  94:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+  95:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+  96:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+  97:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+  98:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+  99:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     acos(_Tp __x)
+ 100:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_acos(__x); }
+ 101:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 102:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::asin;
+ 103:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 104:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 105:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 106:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   asin(float __x)
+ 107:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_asinf(__x); }
+ 108:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 109:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 110:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   asin(long double __x)
+ 111:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_asinl(__x); }
+ 112:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 113:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 114:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 115:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 116:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 117:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 118:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     asin(_Tp __x)
+ 119:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_asin(__x); }
+ 120:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 121:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::atan;
+ 122:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 123:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 124:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 125:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   atan(float __x)
+ 126:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_atanf(__x); }
+ 127:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 128:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 129:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   atan(long double __x)
+ 130:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_atanl(__x); }
+ 131:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 132:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 133:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 134:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 135:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 136:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 137:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     atan(_Tp __x)
+ 138:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_atan(__x); }
+ 139:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 140:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::atan2;
+ 141:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 142:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 143:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 144:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   atan2(float __y, float __x)
+ 145:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_atan2f(__y, __x); }
+ARM GAS  C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s 			page 4
+
+
+ 146:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 147:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 148:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   atan2(long double __y, long double __x)
+ 149:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_atan2l(__y, __x); }
+ 150:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 151:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 152:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp, typename _Up>
+ 153:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 154:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
+ 155:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     atan2(_Tp __y, _Up __x)
+ 156:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     {
+ 157:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
+ 158:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****       return atan2(__type(__y), __type(__x));
+ 159:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     }
+ 160:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 161:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::ceil;
+ 162:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 163:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 164:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 165:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   ceil(float __x)
+ 166:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_ceilf(__x); }
+ 167:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 168:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 169:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   ceil(long double __x)
+ 170:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_ceill(__x); }
+ 171:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 172:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 173:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 174:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 175:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+ 176:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 177:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     ceil(_Tp __x)
+ 178:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_ceil(__x); }
+ 179:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 180:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::cos;
+ 181:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 182:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 183:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 184:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   cos(float __x)
+ 185:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_cosf(__x); }
+ 186:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 187:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 188:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   cos(long double __x)
+ 189:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_cosl(__x); }
+ 190:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 191:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 192:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 193:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 194:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 195:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 196:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     cos(_Tp __x)
+ 197:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_cos(__x); }
+ 198:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 199:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::cosh;
+ 200:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 201:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 202:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ARM GAS  C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s 			page 5
+
+
+ 203:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   cosh(float __x)
+ 204:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_coshf(__x); }
+ 205:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 206:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 207:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   cosh(long double __x)
+ 208:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_coshl(__x); }
+ 209:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 210:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 211:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 212:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 213:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 214:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 215:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     cosh(_Tp __x)
+ 216:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_cosh(__x); }
+ 217:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 218:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::exp;
+ 219:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 220:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 221:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 222:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   exp(float __x)
+ 223:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_expf(__x); }
+ 224:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 225:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 226:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   exp(long double __x)
+ 227:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_expl(__x); }
+ 228:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 229:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 230:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 231:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 232:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 233:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 234:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     exp(_Tp __x)
+ 235:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_exp(__x); }
+ 236:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 237:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::fabs;
+ 238:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 239:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 240:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 241:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   fabs(float __x)
+ 242:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_fabsf(__x); }
+ 243:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 244:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 245:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   fabs(long double __x)
+ 246:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_fabsl(__x); }
+ 247:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 248:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 249:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 250:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 251:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 252:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 253:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     fabs(_Tp __x)
+ 254:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_fabs(__x); }
+ 255:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 256:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::floor;
+ 257:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 258:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 259:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ARM GAS  C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s 			page 6
+
+
+ 260:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   floor(float __x)
+ 261:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_floorf(__x); }
+ 262:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 263:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 264:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   floor(long double __x)
+ 265:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_floorl(__x); }
+ 266:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 267:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 268:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 269:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 270:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 271:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 272:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     floor(_Tp __x)
+ 273:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_floor(__x); }
+ 274:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 275:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::fmod;
+ 276:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 277:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 278:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 279:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   fmod(float __x, float __y)
+ 280:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_fmodf(__x, __y); }
+ 281:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 282:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 283:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   fmod(long double __x, long double __y)
+ 284:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_fmodl(__x, __y); }
+ 285:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 286:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 287:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp, typename _Up>
+ 288:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 289:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
+ 290:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     fmod(_Tp __x, _Up __y)
+ 291:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     {
+ 292:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
+ 293:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****       return fmod(__type(__x), __type(__y));
+ 294:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     }
+ 295:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 296:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::frexp;
+ 297:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 298:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 299:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline float
+ 300:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   frexp(float __x, int* __exp)
+ 301:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_frexpf(__x, __exp); }
+ 302:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 303:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline long double
+ 304:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   frexp(long double __x, int* __exp)
+ 305:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_frexpl(__x, __exp); }
+ 306:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 307:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 308:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 309:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 310:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+ 311:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 312:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     frexp(_Tp __x, int* __exp)
+ 313:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_frexp(__x, __exp); }
+ 314:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 315:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::ldexp;
+ 316:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ARM GAS  C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s 			page 7
+
+
+ 317:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 318:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 319:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   ldexp(float __x, int __exp)
+ 320:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_ldexpf(__x, __exp); }
+ 321:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 322:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 323:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   ldexp(long double __x, int __exp)
+ 324:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_ldexpl(__x, __exp); }
+ 325:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 326:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 327:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 328:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 329:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+ 330:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 331:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     ldexp(_Tp __x, int __exp)
+ 332:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_ldexp(__x, __exp); }
+ 333:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 334:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::log;
+ 335:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 336:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 337:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 338:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   log(float __x)
+ 339:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_logf(__x); }
+ 340:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 341:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 342:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   log(long double __x)
+ 343:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_logl(__x); }
+ 344:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 345:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 346:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 347:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 348:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value, 
+ 349:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 350:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     log(_Tp __x)
+ 351:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_log(__x); }
+ 352:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 353:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::log10;
+ 354:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 355:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 356:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 357:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   log10(float __x)
+ 358:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_log10f(__x); }
+ 359:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 360:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR long double
+ 361:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   log10(long double __x)
+ 362:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_log10l(__x); }
+ 363:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 364:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 365:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   template<typename _Tp>
+ 366:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     inline _GLIBCXX_CONSTEXPR
+ 367:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
+ 368:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****                                     double>::__type
+ 369:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     log10(_Tp __x)
+ 370:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****     { return __builtin_log10(__x); }
+ 371:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 372:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::modf;
+ 373:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ARM GAS  C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s 			page 8
+
+
+ 374:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 375:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline float
+ 376:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   modf(float __x, float* __iptr)
+ 377:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_modff(__x, __iptr); }
+ 378:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 379:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline long double
+ 380:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   modf(long double __x, long double* __iptr)
+ 381:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_modfl(__x, __iptr); }
+ 382:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #endif
+ 383:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 384:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   using ::pow;
+ 385:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** 
+ 386:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath **** #ifndef __CORRECT_ISO_CPP_MATH_H_PROTO
+ 387:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   inline _GLIBCXX_CONSTEXPR float
+ 388:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   pow(float __x, float __y)
+ 389:c:\program files\daisytoolchain\arm-none-eabi\include\c++\10.2.1\cmath ****   { return __builtin_powf(__x, __y); }
+  28              		.loc 1 389 3
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 8
+  31              		@ frame_needed = 1, uses_anonymous_args = 0
+  32 0000 80B5     		push	{r7, lr}
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 7, -8
+  35              		.cfi_offset 14, -4
+  36 0002 82B0     		sub	sp, sp, #8
+  37              		.cfi_def_cfa_offset 16
+  38 0004 00AF     		add	r7, sp, #0
+  39              		.cfi_def_cfa_register 7
+  40 0006 87ED010A 		vstr.32	s0, [r7, #4]
+  41 000a C7ED000A 		vstr.32	s1, [r7]
+  42              		.loc 1 389 26
+  43 000e D7ED000A 		vldr.32	s1, [r7]
+  44 0012 97ED010A 		vldr.32	s0, [r7, #4]
+  45 0016 FFF7FEFF 		bl	powf
+  46 001a F0EE407A 		vmov.f32	s15, s0
+  47              		.loc 1 389 38
+  48 001e B0EE670A 		vmov.f32	s0, s15
+  49 0022 0837     		adds	r7, r7, #8
+  50              		.cfi_def_cfa_offset 8
+  51 0024 BD46     		mov	sp, r7
+  52              		.cfi_def_cfa_register 13
+  53              		@ sp needed
+  54 0026 80BD     		pop	{r7, pc}
+  55              		.cfi_endproc
+  56              	.LFE190:
+  58              		.section	.text._Z6mapPotffffbff,"ax",%progbits
+  59              		.align	1
+  60              		.global	_Z6mapPotffffbff
+  61              		.syntax unified
+  62              		.thumb
+  63              		.thumb_func
+  64              		.fpu fpv5-d16
+  66              	_Z6mapPotffffbff:
+  67              	.LFB544:
+  68              		.file 2 "include/MapPot.cpp"
+   1:include/MapPot.cpp **** #include <cmath>
+   2:include/MapPot.cpp **** #include "MapPot.hpp"
+ARM GAS  C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s 			page 9
+
+
+   3:include/MapPot.cpp **** 
+   4:include/MapPot.cpp **** float mapPot(float value, float outMin, float outMax, float slope, bool invert, float inMin, float 
+  69              		.loc 2 4 107
+  70              		.cfi_startproc
+  71              		@ args = 0, pretend = 0, frame = 40
+  72              		@ frame_needed = 1, uses_anonymous_args = 0
+  73 0000 80B5     		push	{r7, lr}
+  74              		.cfi_def_cfa_offset 8
+  75              		.cfi_offset 7, -8
+  76              		.cfi_offset 14, -4
+  77 0002 8AB0     		sub	sp, sp, #40
+  78              		.cfi_def_cfa_offset 48
+  79 0004 00AF     		add	r7, sp, #0
+  80              		.cfi_def_cfa_register 7
+  81 0006 87ED070A 		vstr.32	s0, [r7, #28]
+  82 000a C7ED060A 		vstr.32	s1, [r7, #24]
+  83 000e 87ED051A 		vstr.32	s2, [r7, #20]
+  84 0012 C7ED041A 		vstr.32	s3, [r7, #16]
+  85 0016 0346     		mov	r3, r0
+  86 0018 87ED022A 		vstr.32	s4, [r7, #8]
+  87 001c C7ED012A 		vstr.32	s5, [r7, #4]
+  88 0020 FB73     		strb	r3, [r7, #15]
+   5:include/MapPot.cpp ****   // slope = 1 --> Linear; slope > 1 --> Exponentiell
+   6:include/MapPot.cpp ****   float normalizedValue;
+   7:include/MapPot.cpp **** 
+   8:include/MapPot.cpp ****   if (invert) {
+  89              		.loc 2 8 3
+  90 0022 FB7B     		ldrb	r3, [r7, #15]	@ zero_extendqisi2
+  91 0024 002B     		cmp	r3, #0
+  92 0026 14D0     		beq	.L4
+   9:include/MapPot.cpp ****     normalizedValue = 1-(value - inMin) / (inMax - inMin);
+  93              		.loc 2 9 32
+  94 0028 97ED077A 		vldr.32	s14, [r7, #28]
+  95 002c D7ED027A 		vldr.32	s15, [r7, #8]
+  96 0030 77EE676A 		vsub.f32	s13, s14, s15
+  97              		.loc 2 9 50
+  98 0034 97ED017A 		vldr.32	s14, [r7, #4]
+  99 0038 D7ED027A 		vldr.32	s15, [r7, #8]
+ 100 003c 37EE677A 		vsub.f32	s14, s14, s15
+ 101              		.loc 2 9 41
+ 102 0040 C6EE877A 		vdiv.f32	s15, s13, s14
+ 103              		.loc 2 9 21
+ 104 0044 B7EE007A 		vmov.f32	s14, #1.0e+0
+ 105 0048 77EE677A 		vsub.f32	s15, s14, s15
+ 106 004c C7ED097A 		vstr.32	s15, [r7, #36]
+ 107 0050 0FE0     		b	.L5
+ 108              	.L4:
+  10:include/MapPot.cpp ****   }
+  11:include/MapPot.cpp ****   else {
+  12:include/MapPot.cpp ****     normalizedValue = (value - inMin) / (inMax - inMin);
+ 109              		.loc 2 12 30
+ 110 0052 97ED077A 		vldr.32	s14, [r7, #28]
+ 111 0056 D7ED027A 		vldr.32	s15, [r7, #8]
+ 112 005a 77EE676A 		vsub.f32	s13, s14, s15
+ 113              		.loc 2 12 48
+ 114 005e 97ED017A 		vldr.32	s14, [r7, #4]
+ 115 0062 D7ED027A 		vldr.32	s15, [r7, #8]
+ARM GAS  C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s 			page 10
+
+
+ 116 0066 37EE677A 		vsub.f32	s14, s14, s15
+ 117              		.loc 2 12 21
+ 118 006a C6EE877A 		vdiv.f32	s15, s13, s14
+ 119 006e C7ED097A 		vstr.32	s15, [r7, #36]
+ 120              	.L5:
+  13:include/MapPot.cpp ****   }
+  14:include/MapPot.cpp ****   if (slope != 1) {
+ 121              		.loc 2 14 3
+ 122 0072 D7ED047A 		vldr.32	s15, [r7, #16]
+ 123 0076 B7EE007A 		vmov.f32	s14, #1.0e+0
+ 124 007a F4EE477A 		vcmp.f32	s15, s14
+ 125 007e F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 126 0082 07D0     		beq	.L6
+  15:include/MapPot.cpp ****     normalizedValue = pow(normalizedValue, slope);
+ 127              		.loc 2 15 26
+ 128 0084 D7ED040A 		vldr.32	s1, [r7, #16]
+ 129 0088 97ED090A 		vldr.32	s0, [r7, #36]
+ 130 008c FFF7FEFF 		bl	_ZSt3powff
+ 131 0090 87ED090A 		vstr.32	s0, [r7, #36]
+ 132              	.L6:
+  16:include/MapPot.cpp ****   }
+  17:include/MapPot.cpp ****   float mappedValue = outMin + (normalizedValue * (outMax - outMin));
+ 133              		.loc 2 17 59
+ 134 0094 97ED057A 		vldr.32	s14, [r7, #20]
+ 135 0098 D7ED067A 		vldr.32	s15, [r7, #24]
+ 136 009c 37EE677A 		vsub.f32	s14, s14, s15
+ 137              		.loc 2 17 49
+ 138 00a0 D7ED097A 		vldr.32	s15, [r7, #36]
+ 139 00a4 67EE277A 		vmul.f32	s15, s14, s15
+ 140              		.loc 2 17 9
+ 141 00a8 97ED067A 		vldr.32	s14, [r7, #24]
+ 142 00ac 77EE277A 		vadd.f32	s15, s14, s15
+ 143 00b0 C7ED087A 		vstr.32	s15, [r7, #32]
+  18:include/MapPot.cpp **** return mappedValue;
+ 144              		.loc 2 18 8
+ 145 00b4 3B6A     		ldr	r3, [r7, #32]	@ float
+ 146 00b6 07EE903A 		vmov	s15, r3
+  19:include/MapPot.cpp **** };...
+ 147              		.loc 2 19 1
+ 148 00ba B0EE670A 		vmov.f32	s0, s15
+ 149 00be 2837     		adds	r7, r7, #40
+ 150              		.cfi_def_cfa_offset 8
+ 151 00c0 BD46     		mov	sp, r7
+ 152              		.cfi_def_cfa_register 13
+ 153              		@ sp needed
+ 154 00c2 80BD     		pop	{r7, pc}
+ 155              		.cfi_endproc
+ 156              	.LFE544:
+ 158              		.text
+ 159              	.Letext0:
+ 160              		.file 3 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\bits\\std_abs.h"
+ 161              		.file 4 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\arm-none-eabi\\th
+ 162              		.file 5 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\math.h"
+ 163              		.file 6 "c:\\program files\\daisytoolchain\\arm-none-eabi\\include\\c++\\10.2.1\\math.h"
+ 164              		.file 7 "<built-in>"
+ARM GAS  C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 MapPot.cpp
+C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s:17     .text._ZSt3powff:00000000 $t
+C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s:25     .text._ZSt3powff:00000000 _ZSt3powff
+C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s:59     .text._Z6mapPotffffbff:00000000 $t
+C:\Users\hahnm\AppData\Local\Temp\ccNybbIT.s:66     .text._Z6mapPotffffbff:00000000 _Z6mapPotffffbff
+
+UNDEFINED SYMBOLS
+powf
